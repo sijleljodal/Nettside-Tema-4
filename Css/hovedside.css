@@ -1,0 +1,435 @@
+html{
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #A22424;
+    font-weight: 300;
+ }
+
+ body{
+    background-color: #E6FEFF; 
+}
+
+.header img {
+    
+    position: relative;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.info p::first-letter {
+    float: left;
+    margin-right: 5px;
+    font-size: 58px;
+    line-height: 85%;
+  }
+
+.info {
+    column-count: 2;
+    column-gap: 1rem;
+    text-align: left;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 30px;
+    line-height: 25px;
+    font-weight: 300;
+}
+
+
+.kompass {
+    position: relative;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.kompass img {
+    width: 70px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: 100px;
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 5px;
+    padding-top: 7rem;
+}
+
+.marina p {
+    text-align: center;
+    margin-top: 1px;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.carta {
+    max-width: 1003px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carta img{
+    display: block;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+}
+
+#zoom {
+    position: fixed;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0, 0.2);
+    background-image: url("../bilder/cartamarina3.jpg");
+    background-repeat: no-repeat;
+    background-position: -1000px -600px;
+    pointer-events: none;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.sjodyr {
+    display: grid;    
+    grid-gap: 70px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.sjodyr img {
+    width: 80%;
+}
+
+.sjodyr h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.sjodyr p {
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.australindia img {
+    width: 90%;
+}
+
+.australindia {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.scroll {
+    text-align: center;
+}
+
+.scroll img {
+    width: 2%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.map {
+    width: 945px;
+    height: 728px;
+    margin: 0 auto;
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: auto;
+}
+
+.para {
+    
+    width: 945px;   
+    height: 728px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /*Bakgrunnen står sille mens man scroller*/ 
+
+}
+#para-1 {
+    background-image: url("../bilder/oldaust.jpg");
+}
+
+#para-2 {
+    background-image: url("../bilder/newaust_1.jpg");
+}
+
+
+
+.forfatter {
+    text-align: center;
+    padding-bottom: 150px;
+    padding-top: 100px;
+}
+
+.forfatter img {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+}
+
+
+.mockup {
+    text-align: center;
+}
+
+.mockup img {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 55%;
+    padding-bottom: 100px;
+}
+
+.boks {
+    text-align: center;
+}
+
+.boks a {
+    border: 2px solid #A22424;  
+    display: inline-block;
+    text-decoration: none;
+    color: #A22424;
+    padding: 10px;
+	font-size: 14px;
+    border-radius: 5px;
+    width: 140px;
+	position: center;
+	box-sizing: border-box;
+    transition: all 500ms ease; 
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.boks a:hover {
+	border-color: transparent;
+	background: #A22424;
+	color: #f2f2f2;
+	
+}
+
+
+.bunn img {
+    width: 100%;
+    padding-top: 5rem;
+}
+
+@media (max-width: 1000px) {
+
+    #zoom {
+        display: none;
+    }
+
+    .carta {
+        padding: 10px;
+    }
+
+    .map {
+        width: calc(945px / 2.5);   
+        height: calc(728px / 2.5); 
+        
+    }
+
+    .para {
+    
+        width: calc(945px / 2.5);   
+        height: calc(728px / 2.5); 
+        background-size: calc(945px / 2.5) calc(728px / 2.5);
+     
+    }
+}
+
+@media (max-width: 950px) {
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    .info {
+        column-count: 2;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .info p::first-letter {
+        float: left;
+        margin-right: 4px;
+        font-size: 45px;
+        line-height: 100%;
+    }
+
+    .kompass img {
+        width: 9%;
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+}
+
+@media (max-width: 780px) {
+    .sjodyr {
+        display: grid;    
+        grid-gap: 70px;
+        padding-top: 60px;
+        padding-bottom: 40px;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .sjodyr img {
+        width: 50%;
+    }
+
+    .sjodyr p{
+        display: grid;    
+        grid-gap: 70px;
+        padding-left: 50px;
+        padding-right: 50px;
+        line-height: 20px;
+    }
+
+    .scroll img {
+        width: 5%;
+    }
+
+    .info {
+        column-count: auto;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+
+    .kompass img {
+        width: 7%;
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    h1 {
+        font-size: 3rem;
+    
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    .info {
+        column-count: 1;
+        line-height: 40px;
+    }
+
+    p {
+        font-size: 0.7rem;
+        line-height: 15px;
+    }
+
+    .info p::first-letter {
+        float: left;
+        margin-right: 4px;
+        font-size: 30px;
+        line-height: 100%;
+    }
+
+    .map {
+        width: calc(945px / 2.5);   
+        height: calc(728px / 2.5); 
+        
+    }
+
+    .para {
+    
+        width: calc(945px / 2.5);   
+        height: calc(728px / 2.5); 
+        background-size: calc(945px / 2.5) calc(728px / 2.5);
+     
+    }
+
+    .kompass img {
+        width: 7%;
+        padding-top: 20px;
+        padding-bottom: 10px;
+     
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    .sjodyr p{
+        display: grid;    
+        padding-left: 50px;
+        padding-right: 50px;
+        line-height: 20px;
+    }
+
+    .p {
+        line-height: 20px;
+    }
+
+    h1 {
+        padding: 10px;
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    .mockup img {
+        width: 80%;
+    }
+
+    .forfatter img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .forfatter {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .map {
+        width: calc(945px / 2.5);   
+        height: calc(728px / 2.5); 
+        
+    }
+
+    .para {
+        width: calc(945px / 2.5);   
+        height: calc(728px / 2.5); 
+        background-size: calc(945px / 2.5) calc(728px / 2.5);
+     
+    }
+    .boks a {
+        padding: 10px;
+        font-size: 10px;
+        width: 90px;
+    }
+}
